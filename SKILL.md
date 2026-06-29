@@ -17,6 +17,12 @@ Hermes Diagnostic Pack is a reusable troubleshooting skill for Hermes Agent.
 
 主語言以繁體中文（臺灣）為主，必要時可補英文說明。
 
+Repository navigation:
+- install/use guide: `docs/install-and-use-as-hermes-skill.md`
+- case library: `cases/30-error-cards.md`
+- manual tests: `tests/manual-test-scenarios.md`
+- detailed references: `references/`
+
 ## When to Use
 
 Load this skill when the task involves any of the following:
@@ -118,6 +124,8 @@ WordPress 類詳細坑位見：`references/wordpress-failure-modes.md`
 ## Reference Cases
 
 Source case library: `cases/30-error-cards.md`
+
+Recommended validation entrypoint: `tests/manual-test-scenarios.md`
 
 Especially important recurring problems:
 1. 重問已提供資訊

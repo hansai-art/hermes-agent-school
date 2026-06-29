@@ -35,6 +35,8 @@
 - [`references/error-taxonomy.md`](../references/error-taxonomy.md)
 - [`references/verification-patterns.md`](../references/verification-patterns.md)
 - [`references/wordpress-failure-modes.md`](../references/wordpress-failure-modes.md)
+- [`docs/install-and-use-as-hermes-skill.md`](./install-and-use-as-hermes-skill.md)
+- [`tests/manual-test-scenarios.md`](../tests/manual-test-scenarios.md)
 
 適合：
 - 想把這份知識做成 Hermes Skill 的人
@@ -47,6 +49,7 @@
 3. 再看診斷包藍圖，理解如何做成可執行流程
 4. 再看 `SKILL.md`，確認技能主檔如何收斂
 5. 最後看 error cards 與 references，開始實作與擴充
+6. 若要落地測試，直接跑 manual test scenarios
 
 ### 目前最值得擴充的方向
 
@@ -72,7 +75,9 @@ You can use it as:
 2. `docs/failure-patterns-and-diagnostic-pack.md` for the problem framing
 3. `docs/diagnostic-pack-blueprint.md` for the implementation design
 4. `SKILL.md` for the skill-facing structure
-5. `cases/30-error-cards.md` and `references/` for grounded operational content
+5. `docs/install-and-use-as-hermes-skill.md` for local usage guidance
+6. `tests/manual-test-scenarios.md` for real-world validation
+7. `cases/30-error-cards.md` and `references/` for grounded operational content
 
 ### Best use cases
 

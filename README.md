@@ -50,6 +50,12 @@
 ### 5. [How to Use This Pack](docs/how-to-use-this-pack.md)
 中英雙語的使用導覽頁，說明如何閱讀、如何引用、如何擴充。
 
+### 6. [Install and Use as a Hermes Skill](docs/install-and-use-as-hermes-skill.md)
+說明如何把這個 repo 當作本地 skill 草稿使用，以及未來如何走向正式發布。
+
+### 7. [Manual Test Scenarios](tests/manual-test-scenarios.md)
+提供 8 類真實手動測試場景，用來驗這個 skill 是不是在真實任務裡真的有幫助。
+
 ## 目前抽出的 8 大錯誤母題
 
 1. 沒先用現有上下文
@@ -93,11 +99,13 @@
 
 ## 狀態
 
-目前是 v0.2：
+目前是 v0.3：
 - 公開知識庫初版
 - 案例卡片庫
 - 正式 Skill 母稿
 - bilingual usage guide
+- install/use guide
+- manual test scenarios
 
 ## 授權
 
