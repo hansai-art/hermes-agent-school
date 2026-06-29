@@ -29,9 +29,12 @@
 - 想把錯誤整理成教學案例的人
 - 想把故障模式轉成 issue / SOP / lesson learned 的人
 
-#### 3. 當作未來 Skill 母稿
+#### 3. 當作正式 Skill 母稿
 讀：
 - [`SKILL.md`](../SKILL.md)
+- [`references/error-taxonomy.md`](../references/error-taxonomy.md)
+- [`references/verification-patterns.md`](../references/verification-patterns.md)
+- [`references/wordpress-failure-modes.md`](../references/wordpress-failure-modes.md)
 
 適合：
 - 想把這份知識做成 Hermes Skill 的人
@@ -42,7 +45,8 @@
 1. 先看 README，建立全貌
 2. 再看失敗模式文件，理解為什麼這些坑會反覆發生
 3. 再看診斷包藍圖，理解如何做成可執行流程
-4. 最後看 error cards 與 SKILL.md，開始實作與擴充
+4. 再看 `SKILL.md`，確認技能主檔如何收斂
+5. 最後看 error cards 與 references，開始實作與擴充
 
 ### 目前最值得擴充的方向
 
@@ -58,7 +62,6 @@
 This repository is the first public knowledge-base version of **Hermes Agent School**.
 
 You can use it as:
-
 - a beginner-friendly map of common Hermes pitfalls
 - a failure-pattern library for advanced users
 - the source of truth for a future installable Hermes troubleshooting skill
@@ -68,7 +71,8 @@ You can use it as:
 1. `README.md` for the big picture
 2. `docs/failure-patterns-and-diagnostic-pack.md` for the problem framing
 3. `docs/diagnostic-pack-blueprint.md` for the implementation design
-4. `cases/30-error-cards.md` and `SKILL.md` for reusable operational content
+4. `SKILL.md` for the skill-facing structure
+5. `cases/30-error-cards.md` and `references/` for grounded operational content
 
 ### Best use cases
 

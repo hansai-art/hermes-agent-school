@@ -1,9 +1,19 @@
+---
+name: hermes-diagnostic-pack
+description: 把真實 Hermes Agent 踩坑案例整理成可安裝的診斷與修補包。用於檢查上下文使用、驗證習慣、工具生效時機、WordPress 輸出格式、自動化送出可靠性與長 session 效能膨脹等常見問題。
+---
+
 # Hermes Diagnostic Pack
 
 ## Overview
 
 Hermes Diagnostic Pack is a reusable troubleshooting skill for Hermes Agent.
-It packages real failure patterns into a practical workflow that helps the agent diagnose, explain, and repair common problems instead of bluffing, overpromising, or skipping verification.
+
+它的任務不是只列 bug，而是把真實踩坑經驗整理成：
+- 診斷流程
+- 修補順序
+- 驗證要求
+- 可重用 guardrails
 
 主語言以繁體中文（臺灣）為主，必要時可補英文說明。
 
@@ -14,21 +24,22 @@ Load this skill when the task involves any of the following:
 - 使用者說：「為什麼不能用」、「為什麼明明改了還沒生效」、「為什麼越用越慢」
 - 使用者懷疑 AI 跳過驗證、亂承諾、亂 fallback、重問已給資訊
 - 任務涉及 WordPress、Gutenberg、Rank Math、browser automation、computer_use、image generation、tool lifecycle、session bloat
-- 需要把一個症狀迅速分流到上下文層、工具層、輸出層、自動化層或效能層
+- 需要把症狀迅速分流到上下文層、工具層、輸出層、自動化層或效能層
 
 Do not load this skill for simple one-off writing tasks that do not involve diagnosis or troubleshooting.
 
 ## Core Workflow
 
 ### 1. Classify the symptom first
-先判斷目前問題最像哪一層：
+先判斷問題最像哪一層：
+- 上下文層
+- 驗證層
+- 工具層
+- 輸出層
+- 自動化層
+- 效能層
 
-- 上下文層：session_search、memory、已給資訊、source-of-truth
-- 驗證層：改了卻沒驗證、口頭宣稱完成
-- 工具層：toolset、plugin、OAuth、`/reset`、restart、生效時機
-- 輸出層：WordPress block、FAQ、SEO、狀態控制、部分成功誤報
-- 自動化層：焦點、輸入框、視窗辨識、送出可靠性
-- 效能層：compression、renderer、session 膨脹、MCP 過肥
+詳細分類見：`references/error-taxonomy.md`
 
 ### 2. Check direct evidence before theorizing
 優先順序：
@@ -47,7 +58,7 @@ Do not load this skill for simple one-off writing tasks that do not involve diag
 如果工具、plugin、權限、OAuth、session lifecycle 還沒確認，就不能直接承諾能做。
 
 ### 4. Propose the shortest repair path
-每次修補建議應該只列最短可行路徑：
+每次修補建議應只列最短可行路徑：
 - 先確認什麼
 - 再改什麼
 - 改完如何驗證
@@ -58,6 +69,8 @@ Do not load this skill for simple one-off writing tasks that do not involve diag
 - 必須驗證
 - 若沒有 canonical test，就做 ad-hoc verification
 - 若無法驗證，明講 blocker，不可假裝完成
+
+詳細驗證模式見：`references/verification-patterns.md`
 
 ## Diagnostic Output Format
 
@@ -100,11 +113,13 @@ Do not load this skill for simple one-off writing tasks that do not involve diag
 - 把部分成功包裝成完整成功
 - 把慢全部怪給模型，忽略 renderer / session / MCP
 
+WordPress 類詳細坑位見：`references/wordpress-failure-modes.md`
+
 ## Reference Cases
 
-See `cases/30-error-cards.md` for the source case library.
+Source case library: `cases/30-error-cards.md`
 
-The first 10 especially important recurring problems are:
+Especially important recurring problems:
 1. 重問已提供資訊
 2. 未驗證就宣稱完成
 3. 工具已開但 session 尚未生效
@@ -130,8 +145,8 @@ Before finishing a diagnosis or repair, check:
 ## Contribution Direction
 
 This skill should evolve from real failures, not hypothetical examples.
-When adding new rules:
 
+When adding new rules:
 1. record the symptom
 2. identify the actual mistake
 3. capture the repair path

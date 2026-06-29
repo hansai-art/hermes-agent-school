@@ -10,7 +10,7 @@
 - 讓進階使用者更快定位問題在哪一層
 - 把真實踩坑經驗，變成可重用的 guardrails、診斷流程與未來 Skill
 
-這個 repo 目前是 **公開知識庫初版**。
+這個 repo 目前是 **公開知識庫初版 + 正式 Skill 母稿**。
 後續會逐步長成：
 
 1. 失敗模式庫
@@ -40,6 +40,15 @@
 
 ### 2. [診斷包藍圖](docs/diagnostic-pack-blueprint.md)
 定義未來如果做成 Skill / starter pack，應包含哪些模組、怎麼輸入、怎麼輸出、怎麼驗證。
+
+### 3. [SKILL.md](SKILL.md)
+正式的 Hermes Skill 母稿，已補 frontmatter、觸發條件、核心流程與驗證要求。
+
+### 4. [30 Error Cards](cases/30-error-cards.md)
+30 筆真實踩坑案例卡片，是未來擴充規則與 references 的主要來源。
+
+### 5. [How to Use This Pack](docs/how-to-use-this-pack.md)
+中英雙語的使用導覽頁，說明如何閱讀、如何引用、如何擴充。
 
 ## 目前抽出的 8 大錯誤母題
 
@@ -84,12 +93,11 @@
 
 ## 狀態
 
-目前是 v0 初版知識庫。
-
-下一步最重要的是建立：
-- 30 筆錯誤案例卡片庫
-- 10 個診斷模組
-- `SKILL.md` 初版
+目前是 v0.2：
+- 公開知識庫初版
+- 案例卡片庫
+- 正式 Skill 母稿
+- bilingual usage guide
 
 ## 授權
 
